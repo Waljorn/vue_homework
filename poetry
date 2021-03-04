@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>此情此景，吾想吟诗一首</title>
+	</head>
+	<body style="background-color: antiquewhite; color: indianred; text-align: center; font-family: 楷体;">
+		<h1>梅花</h1>
+		<p>王安石[宋]</p>
+		<h2>墙角数枝梅，</h2>
+		<h2>凌寒独自开。</h2>
+		<h2>遥知不是雪，</h2>
+		<h2>为有暗香来。</h2>
+	</body>
+</html>
