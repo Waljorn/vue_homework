@@ -27,9 +27,9 @@
 
 					</div>
 					<br /><br />
-					<p v-if="myNumber<randomNumber&&myNumber!=''">你输入的数太小了</p>
-					<p v-if="myNumber==randomNumber">恭喜你，猜对了！</p>
-					<p v-if="myNumber>randomNumber">你输入的数太大了</p>
+					<h4 v-if="myNumber<randomNumber&&myNumber!=''" style="color: red;">你输入的数太小了</h4>
+					<h4 v-if="myNumber==randomNumber" style="color: green;">恭喜你，猜对了！</h4>
+					<h4 v-if="myNumber>randomNumber" style="color: red;">你输入的数太大了</h4>
 				</div>
 				
 			</div>
