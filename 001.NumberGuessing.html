@@ -26,6 +26,7 @@
 						<input type="text" class="form-control" v-model="myNumber" placeholder="请输入一个1~100的整数">
 
 					</div>
+					<br /><br />
 					<p v-if="myNumber<randomNumber&&myNumber!=''">你输入的数太小了</p>
 					<p v-if="myNumber==randomNumber">恭喜你，猜对了！</p>
 					<p v-if="myNumber>randomNumber">你输入的数太大了</p>
