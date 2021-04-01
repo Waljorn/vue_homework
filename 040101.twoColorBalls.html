@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>双色球开奖</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body style="background: antiquewhite;">
+		<div id="app" class="container" style="text-align:center;">
+			<div class="row">
+				<br /><br /><br />
+				<h1>双色球开奖</h1>
+				<br /><br /><br />
+				<div class="col-md-8 col-md-offset-2">
+					<button class="btn btn-success" @click="randomNumber">点我开奖</button><br /><br />
+					<nobr><h3 v-if="show==1" class="text-danger">红球:{{red1}},{{red2}},{{red3}},{{red4}},{{red5}},{{red6}}</h3>&nbsp;&nbsp;
+					<h3 v-if="show==1" class="text-primary" style="display: inline;">蓝球:{{blue1}}</h3></nobr>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var app = new Vue({
+				el: '#app',
+				data: {
+					show: 0,
+					red1: '',
+					red2: '',
+					red3: '',
+					red4: '',
+					red5: '',
+					red6: '',
+					blue1: ''
+				},
+				methods: {
+					randomNumber: function() {
+						this.show = 1;
+						this.red1 = Math.ceil(Math.random() * 100);
+						this.red2 = Math.ceil(Math.random() * 100);
+						this.red3 = Math.ceil(Math.random() * 100);
+						this.red4 = Math.ceil(Math.random() * 100);
+						this.red5 = Math.ceil(Math.random() * 100);
+						this.red6 = Math.ceil(Math.random() * 100);
+						this.blue1 = Math.ceil(Math.random() * 100);
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
