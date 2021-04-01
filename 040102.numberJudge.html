@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>奇偶数判断</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body style="background: antiquewhite;">
+		<div id="app" class="container" style="text-align:center;">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<br /><br /><br />
+					<h1>奇偶数判断</h1>
+					<br /><br /><br />
+
+					<div class="form-inline">
+						<div class="form-group">
+							<label for="exampleInputName2">请输入一个数：</label>
+							<input type="text" class="form-control" v-model="myNumber" placeholder="请输入一个整数">
+						</div>
+						<button class="btn btn-success" @click="judge">确定</button>
+					</div>
+					<br />
+					<h3 v-if="numberType != ''" style="color: red;">{{numberType}}</h3>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var app = new Vue({
+				el: '#app',
+				data: {
+					myNumber: '',
+					numberType: ''
+				},
+				methods: {
+					judge: function() {
+						if (this.myNumber % 2 == 0) {
+							this.numberType = '偶数';
+						} else {
+							this.numberType = '奇数';
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
