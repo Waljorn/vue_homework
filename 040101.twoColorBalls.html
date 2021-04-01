@@ -14,10 +14,8 @@
 					<h1>双色球开奖啦!</h1>
 					<br /><br /><br />
 					<button class="btn btn-success" @click="randomNumber">点我开奖</button><br /><br />
-					<nobr>
-						<h3 v-if="show==1" class="text-danger">红球:{{red1}},{{red2}},{{red3}},{{red4}},{{red5}},{{red6}}</h3>&nbsp;&nbsp;
-						<h3 v-if="show==1" class="text-primary" style="display: inline;">蓝球:{{blue1}}</h3>
-					</nobr>
+					<h3 v-if="show==1" class="text-danger">红球:{{red1}},{{red2}},{{red3}},{{red4}},{{red5}},{{red6}}</h3>&nbsp;&nbsp;
+					<h3 v-if="show==1" class="text-primary" style="display: inline;">蓝球:{{blue1}}</h3>
 				</div>
 			</div>
 		</div>
